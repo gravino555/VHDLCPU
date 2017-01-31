@@ -1,0 +1,117 @@
+iMPACT Version: 10.1
+
+iMPACT log file Started on Tue Dec  6 10:22:34 2016
+
+// *** BATCH CMD : loadProjectFile -file"/nfs/home/m/m_gravin/Modelsim/Xilinx/default.ipf"
+'1': Loading file '/nfs/home/m/m_gravin/Modelsim/Xilinx/lab5/datapath.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading   /nfs/sw_cmc/x86_64.EL7/tools/xilinx_10.1/ISE/virtex2p/data/xc2vp30.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Active mode is ACECF
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "134217728"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setCurrentCollection -collection "lab5"
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setCurrentDeviceChain -index 0
+// *** BATCH CMD : setCurrentCollection -collection "lab5"
+Loading collection lab5.
+Design rev0 Version 0.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setCurrentCollection -collection "lab5"
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : deleteCollection -name "lab5"
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "0"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "134217728"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addConfigDevice -size 134217728 -name "labtest" -path"/nfs/home/m/m_gravin/Modelsim/Xilinx/"
+// *** BATCH CMD : addCollection -name "labtest"
+// *** BATCH CMD : addDesign -version 0 -name "rev0"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setCurrentCollection -collection "labtest"
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : deleteCollection -name "labtest"
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "128000000"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addConfigDevice -size 128000000 -name "XCACECF" -path"/nfs/home/m/m_gravin/Modelsim/Xilinx/labtest"
+// *** BATCH CMD : addCollection -name "labtest"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "134217728"
+// *** BATCH CMD : setAttribute -configdevice -attr reserveSize -value "0"
+// *** BATCH CMD : setAttribute -configdevice -attr name -value "XCCACE128-I"
+// *** BATCH CMD : addDesign -version 0 -name "rev0"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addDeviceChain -index 0
+------------------ GUI: Wizard Data Report  -------------------------
+      File Mode : ACECF
+      Collection Name : labtest
+      Collection Locatnion : /nfs/home/m/m_gravin/Modelsim/Xilinx/
+      Collection Size : 0 Mbits
+      Reserved Space : 0 Mbits
+      Number of Design : 1
+      Config Address and Design Name list : 
+Version: 0   DesignName: rev0
+------------------------ END of Report ------------------------------
+V2Pro Part: xc2vp30 w/2 ppc
+// *** BATCH CMD : setMode -acecf
+1. Initializing V2Pro File...
+// *** BATCH CMD : addDevice -p 1 -file"/nfs/home/m/m_gravin/Modelsim/Xilinx/labtest/datapath.bit"
+'1': Loading file '/nfs/home/m/m_gravin/Modelsim/Xilinx/labtest/datapath.bit'...
+done.
+INFO:iMPACT:1777 - 
+   Reading   /nfs/sw_cmc/x86_64.EL7/tools/xilinx_10.1/ISE/virtex2p/data/xc2vp30.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Add one device.// *** BATCH CMD : setAttribute -configdevice -attr path -value"/nfs/home/m/m_gravin/Modelsim/Xilinx"
+// *** BATCH CMD : generate -active labtest
+INFO:iMPACT:794 - Creating SVF File   /nfs/home/m/m_gravin/Modelsim/Xilinx/labtest/rev0/rev0.svf...
+
+
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Creating Ace File /nfs/home/m/m_gravin/Modelsim/Xilinx/labtest/rev0/rev0.ace...
+Copy active xilinx.sys /nfs/home/m/m_gravin/Modelsim/Xilinx/labtest/xilinx.systo root.
+// *** BATCH CMD : saveProjectFile -file"/nfs/home/m/m_gravin/Modelsim/Xilinx/default.ipf"
